@@ -5,9 +5,6 @@ import requests
 import tempfile
 from dotenv import load_dotenv
 
-# Load environment variables from a .env file (if you're using one)
-load_dotenv()
-
 # Set your OpenAI API key from environment variables
 openai.api_key = os.getenv("OPENAI_API_KEY")
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
