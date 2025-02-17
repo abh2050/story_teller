@@ -42,7 +42,7 @@ def generate_story(prompt, max_tokens):
             {"role": "user", "content": prompt},
         ],
         max_tokens=max_tokens,
-        temperature=0.7,
+        temperature=0.95,
     )
     story_text = response["choices"][0]["message"]["content"]
     return story_text
