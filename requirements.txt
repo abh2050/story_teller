@@ -1,5 +1,5 @@
 streamlit
-openai==0.28
+openai
 requests
 python-dotenv
 gtts==2.2.3
