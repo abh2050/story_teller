@@ -3,3 +3,4 @@ openai==0.28
 requests
 python-dotenv
 gtts==2.2.3
+asyncio
