@@ -97,7 +97,8 @@ if st.session_state.story and st.button("Play Story"):
                 instructions="Narrate the story in a warm, engaging tone for children.",
                 response_format="pcm",
             ) as response:
-                st.audio(response.read(), format='audio/wav')
+                audio_data = await response.read()  # Ensure coroutine is awaited
+                st.audio(audio_data, format='audio/wav')
         except Exception as e:
             st.error(f"Error: {e}")
     
